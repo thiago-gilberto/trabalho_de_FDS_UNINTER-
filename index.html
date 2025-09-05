@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions</title>
+    <link rel="shortcut icon" href="imagens/rocket.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>TechSolutions</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        
+        <!-- Menu Mobile -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        
+        <div class="overlay" id="overlay"></div>
+        
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1 id="typewriter"></h1>
+                <p>Oferecemos serviços inovadores de TI que ajudam empresas a alcançarem seu potencial máximo através da tecnologia.</p>
+                <a href="#form" class="btn" aria-label="Ir para o formulário de demonstração">Comece Agora</a>
+            </div>
+            
+            <div class="hero-form" id="form">
+                <h2 class="form-title">Solicite uma Demonstração</h2>
+                <form id="demo-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" class="form-control" placeholder="Seu nome">
+                        <div class="error-message" id="name-error">Por favor, insira um nome válido</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="form-control" placeholder="seu@email.com">
+                        <div class="error-message" id="email-error">Por favor, insira um e-mail válido</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Empresa</label>
+                        <input type="text" id="company" class="form-control" placeholder="Nome da empresa">
+                        <div class="error-message" id="company-error">Por favor, insira o nome da empresa</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Serviço de Interesse</label>
+                        <select id="service" class="form-control">
+                            <option value="">Selecione um serviço</option>
+                            <option value="cloud">Cloud Computing</option>
+                            <option value="dev">Desenvolvimento Web</option>
+                            <option value="ai">Inteligência Artificial</option>
+                            <option value="consultoria">Consultoria em TI</option>
+                        </select>
+                        <div class="error-message" id="service-error">Por favor, selecione um serviço</div>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%">Solicitar Demonstração</button>
+                    
+                    <div class="form-success" id="form-success">
+                        Obrigado! Sua solicitação foi enviada com sucesso!
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <section class="content" id="servicos">
+            <h2 class="title text-center">Nossos Serviços</h2>
+            
+            <div class="features-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing</h3>
+                    <p>Soluções em nuvem escaláveis e seguras para seu negócio, com alta disponibilidade e performance.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites e aplicações web modernas, responsivas e com as melhores tecnologias do mercado.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Implementação de soluções de AI e machine learning para automatizar processos e obter insights.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content" id="sobre">
+            <h2 class="title text-center">Sobre Nós</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Na TechSolutions, somos apaixonados por tecnologia e inovação. Fundada em 2010, nossa empresa tem como missão ajudar negócios de todos os tamanhos a aproveitarem o poder transformador da tecnologia.</p>
+                    <p>Nossa equipe é composta por especialistas altamente qualificados e certificados nas mais modernas tecnologias do mercado. Com mais de 200 projetos entregues, temos a experiência necessária para enfrentar os desafios mais complexos.</p>
+                    <p>Acreditamos que a tecnologia deve ser uma aliada estratégica para o crescimento dos negócios, e não apenas um custo operacional. Por isso, desenvolvemos soluções personalizadas que atendem às necessidades específicas de cada cliente.</p>
+                </div>
+                <div class="about-image">
+                    <img src="imagens/time.avif" alt="Escritório da TechSolutions">
+                </div>
+            </div>
+            
+            <h3 class="title text-center" style="margin-top: 60px;">Nossa Equipe</h3>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="imagens/carlos.avif" alt="Carlos Silva" class="team-img">
+                    <h4>Carlos Silva</h4>
+                    <p>CEO & Founder</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="imagens/ana.avif" alt="Ana Santos" class="team-img">
+                    <h4>Ana Santos</h4>
+                    <p>CTO</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="imagens/pedro.avif" alt="Pedro Costa" class="team-img">
+                    <h4>Pedro Costa</h4>
+                    <p>Lead Developer</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="imagens/marcelo.avif" alt="Marina Oliveira" class="team-img">
+                    <h4>Marcelo Oliveira</h4>
+                    <p>UX/UI Designer</p>
+                </div>
+            </div>
+        </section>
+        
+        <article class="content" id="contato">
+            <h2 class="title text-center">Entre em Contato</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av. Paulista, 1000, São Paulo - SP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 3456-7890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@techsolutions.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="form-title">Envie uma Mensagem</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Nome Completo</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="Seu nome">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">E-mail</label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="seu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Assunto</label>
+                            <input type="text" id="contact-subject" class="form-control" placeholder="Assunto da mensagem">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Mensagem</label>
+                            <textarea id="contact-message" class="form-control" rows="5" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+        
+        <footer>
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>TechSolutions</span>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=pt"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/?locale=pt_BR"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/home"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <p>&copy; 2023 TechSolutions. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('demo-form');
+            const contactForm = document.getElementById('contact-form');
+            const successMessage = document.getElementById('form-success');
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const closeBtn = document.getElementById('close-btn');
+            const mobileNav = document.getElementById('mobile-nav');
+            const overlay = document.getElementById('overlay');
+            
+            // Configuração do efeito de digitação
+            const titleElement = document.getElementById('typewriter');
+            const text = "Soluções Tecnológicas para <span class='highlight'>Impulsionar</span> seu Negócio";
+            let i = 0;
+            let isTag = false;
+            
+            function typeWriter() {
+                if (i < text.length) {
+                    if (text.charAt(i) === '<') {
+                        isTag = true;
+                    }
+                    
+                    if (isTag) {
+                        // Processar a tag completa de uma vez
+                        const tagEnd = text.indexOf('>', i);
+                        if (tagEnd !== -1) {
+                            const tagContent = text.substring(i, tagEnd + 1);
+                            titleElement.innerHTML += tagContent;
+                            i = tagEnd + 1;
+                            isTag = false;
+                            setTimeout(typeWriter, 50);
+                            return;
+                        }
+                    } else {
+                        titleElement.innerHTML += text.charAt(i);
+                        i++;
+                    }
+                    setTimeout(typeWriter, 50);
+                }
+            }
+            
+            // Iniciar o efeito de digitação
+            setTimeout(typeWriter, 500);
+            
+            // Função para validar e-mail
+            function isValidEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+            
+            // Função para mostrar erro
+            function showError(inputId, errorId) {
+                document.getElementById(errorId).style.display = 'block';
+                document.getElementById(inputId).style.boxShadow = '0 0 0 3px rgba(255, 107, 107, 0.5)';
+            }
+            
+            // Função para esconder erro
+            function hideError(inputId, errorId) {
+                document.getElementById(errorId).style.display = 'none';
+                document.getElementById(inputId).style.boxShadow = 'none';
+            }
+            
+            // Validação em tempo real
+            document.getElementById('name').addEventListener('input', function() {
+                if (this.value.trim().length < 3) {
+                    showError('name', 'name-error');
+                } else {
+                    hideError('name', 'name-error');
+                }
+            });
+            
+            document.getElementById('email').addEventListener('input', function() {
+                if (!isValidEmail(this.value)) {
+                    showError('email', 'email-error');
+                } else {
+                    hideError('email', 'email-error');
+                }
+            });
+            
+            document.getElementById('company').addEventListener('input', function() {
+                if (this.value.trim().length < 2) {
+                    showError('company', 'company-error');
+                } else {
+                    hideError('company', 'company-error');
+                }
+            });
+            
+            document.getElementById('service').addEventListener('change', function() {
+                if (this.value === '') {
+                    showError('service', 'service-error');
+                } else {
+                    hideError('service', 'service-error');
+                }
+            });
+            
+            // Envio do formulário
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isValid = true;
+                
+                // Validar nome
+                if (document.getElementById('name').value.trim().length < 3) {
+                    showError('name', 'name-error');
+                    isValid = false;
+                }
+                
+                // Validar e-mail
+                if (!isValidEmail(document.getElementById('email').value)) {
+                    showError('email', 'email-error');
+                    isValid = false;
+                }
+                
+                // Validar empresa
+                if (document.getElementById('company').value.trim().length < 2) {
+                    showError('company', 'company-error');
+                    isValid = false;
+                }
+                
+                // Validar serviço
+                if (document.getElementById('service').value === '') {
+                    showError('service', 'service-error');
+                    isValid = false;
+                }
+                
+                // Se o formulário for válido
+                if (isValid) {
+                    // Simular envio (em um caso real, aqui seria uma requisição AJAX)
+                    form.reset();
+                    successMessage.style.display = 'block';
+                    
+                    // Esconder a mensagem de sucesso após 5 segundos
+                    setTimeout(function() {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                }
+            });
+            
+            // Envio do formulário de contato
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                contactForm.reset();
+            });
+            
+            // Animação de scroll para os elementos
+            const cards = document.querySelectorAll('.card, .team-member');
+            
+            function checkScroll() {
+                cards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (cardTop < windowHeight * 0.85) {
+                        card.style.opacity = 1;
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+            
+            // Inicializar opacidade dos cards
+            cards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            // Verificar scroll na inicialização e durante o scroll
+            window.addEventListener('scroll', checkScroll);
+            checkScroll();
+            
+            // Menu mobile - Abrir
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileNav.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            // Menu mobile - Fechar
+            closeBtn.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Fechar menu ao clicar no overlay
+            overlay.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Fechar menu ao clicar em um link
+            const mobileLinks = document.querySelectorAll('.mobile-nav a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileNav.classList.remove('active');
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
